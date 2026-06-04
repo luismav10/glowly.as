@@ -8,7 +8,7 @@ import { Invoice } from '../models/invoice';
 export class FacturaService {
   private productos: Product[] = [
     {
-      id: 1, nombre: 'Buzo Premium', precio: 55.00, categoria: 'Buzos', icono: '🧥',
+      id: 1, nombre: 'Sudaera Premium', precio: 55.00, categoria: 'Buzos', icono: '🧥',
       imagen: 'assets/images/buzo-blanco.jpeg',
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/buzo-blanco.jpeg' },
@@ -33,8 +33,17 @@ export class FacturaService {
         { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/set-musera-sport-negro.jpeg' },
         { nombre: 'Crema', hex: '#f5e6d3', imagen: 'assets/images/set-musera-sport-crema.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/set-musera-sport-negr.jpeg' },
+        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/set-musera-sport-rosado.jpeg' },
       ],
     },
+    {
+      id: 4, nombre: 'Top sencillo', precio: 25.00, categoria: 'Tops', icono: '👚',
+      imagen: 'assets/images/top-sencillo.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-simple-negro.jpeg' },
+        { nombre: 'Rojo', hex: '#9e9e9e', imagen: 'assets/images/top-simple-rojo.jpeg' },
+      ],
+    }
   ];
 
   private carritoSubject = new BehaviorSubject<CartItem[]>([]);
