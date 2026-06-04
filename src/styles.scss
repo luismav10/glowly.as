@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e8d5f5 30%, #dcc8ed 70%, #d4b8e8 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #4a2c5e;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.2); border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: #ce93d8; border-radius: 10px; }

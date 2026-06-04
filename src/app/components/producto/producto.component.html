@@ -1,0 +1,35 @@
+<div class="producto-card" [class.expandido]="mostrarColores()">
+  <div class="img-wrapper" (click)="toggleColores()">
+    <img [src]="colorSeleccionado().imagen" [alt]="product().nombre + ' ' + colorSeleccionado().nombre" />
+    <div class="color-badge">
+      <span class="color-dot" [style.background]="colorSeleccionado().hex"></span>
+      {{ colorSeleccionado().nombre }}
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>{{ product().nombre }}</h3>
+    <span class="categoria">{{ product().categoria }}</span>
+    <div class="precio">Bs. {{ product().precio | number:'1.2-2' }}</div>
+    <button class="btn-add" (click)="agregar(); $event.stopPropagation()">Añadir</button>
+  </div>
+
+  <div class="colores-panel" [@expandColores]="mostrarColores()" (click)="$event.stopPropagation()">
+    <p class="colores-titulo">Colores disponibles:</p>
+    <div class="colores-grid">
+      @for (color of product().colores; track color.nombre) {
+        <div
+          class="color-opcion"
+          [class.activo]="colorSeleccionado().nombre === color.nombre"
+          (click)="seleccionarColor(color)"
+        >
+          <img [src]="color.imagen" [alt]="color.nombre" />
+          <div class="color-label">
+            <span class="color-dot" [style.background]="color.hex"></span>
+            {{ color.nombre }}
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

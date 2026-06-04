@@ -1,0 +1,6 @@
+<h2>🛍️ Catálogo</h2>
+<div class="productos-grid">
+  @for (product of productos$ | async; track product.id) {
+    <app-producto [product]="product" (add)="agregar($event)" />
+  }
+</div>

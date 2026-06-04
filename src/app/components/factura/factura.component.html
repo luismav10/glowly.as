@@ -1,0 +1,95 @@
+<h2>🧾 Facturación</h2>
+
+<label>Cliente</label>
+<input type="text" [(ngModel)]="cliente" placeholder="Nombre del cliente">
+
+<label>Documento (RIF / CI)</label>
+<input type="text" [(ngModel)]="documento" placeholder="J-12345678-0">
+
+<label>Método de pago</label>
+<select [(ngModel)]="pago">
+  <option value="Efectivo">💵 Efectivo</option>
+  <option value="Transferencia">🏦 Transferencia</option>
+  <option value="Pago móvil">📱 Pago móvil</option>
+  <option value="Tarjeta de débito">💳 Tarjeta de débito</option>
+  <option value="Tarjeta de crédito">💳 Tarjeta de crédito</option>
+</select>
+
+<h3 class="section-title">🛒 Carrito</h3>
+
+@if ((carrito$ | async); as carrito) {
+  @if (carrito.length > 0) {
+    <table class="tabla-carrito">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cant</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of carrito; track item.id) {
+          <tr>
+            <td>{{ item.icono }} {{ item.nombre }}</td>
+            <td>Bs. {{ item.precio | number:'1.2-2' }}</td>
+            <td>
+              <input
+                type="number"
+                min="1"
+                [value]="item.cantidad"
+                class="cant-input"
+                (change)="actualizarCant(item.id, $any($event.target).value)"
+              >
+            </td>
+            <td>Bs. {{ item.precio * item.cantidad | number:'1.2-2' }}</td>
+            <td><button class="btn-eliminar" (click)="eliminar(item.id)">✕</button></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  } @else {
+    <div class="carrito-vacio">El carrito está vacío</div>
+  }
+
+  <div class="resumen">
+    <div class="fila"><span>Subtotal</span><span>Bs. {{ calcularSubtotal(carrito) | number:'1.2-2' }}</span></div>
+    <div class="fila"><span>IVA (16%)</span><span>Bs. {{ calcularIVA(carrito) | number:'1.2-2' }}</span></div>
+    <div class="fila total"><span>TOTAL</span><span>Bs. {{ calcularTotal(carrito) | number:'1.2-2' }}</span></div>
+  </div>
+}
+
+<button class="btn-accion btn-facturar" (click)="generar()">📄 Generar Factura</button>
+<button class="btn-accion btn-limpiar" (click)="limpiar()">🗑️ Limpiar carrito</button>
+
+@if (factura) {
+  <div class="modal-overlay" (click)="cerrarModal()">
+    <div class="modal" (click)="$event.stopPropagation()">
+      <h2>✅ Factura Generada</h2>
+      <div class="modal-body">
+        <div class="modal-header">
+          <div class="tienda">✨ Glowly.sa</div>
+          <div class="rif">RIF: J-12345678-0</div>
+          <div class="factura-nro">{{ factura.numero }}</div>
+          <div class="fecha">{{ factura.fecha | date:'longDate' }} - {{ factura.fecha | date:'shortTime' }}</div>
+        </div>
+        <div class="detalle-fila"><span>Cliente:</span><span>{{ factura.cliente }}</span></div>
+        <div class="detalle-fila"><span>Documento:</span><span>{{ factura.documento || 'N/A' }}</span></div>
+        <div class="detalle-fila"><span>Pago:</span><span>{{ factura.pago }}</span></div>
+        <div class="items-section">
+          @for (item of factura.items; track item.id) {
+            <div class="detalle-fila">
+              <span>{{ item.icono }} {{ item.nombre }} x{{ item.cantidad }}</span>
+              <span>Bs. {{ item.precio * item.cantidad | number:'1.2-2' }}</span>
+            </div>
+          }
+        </div>
+        <div class="detalle-fila"><span>Subtotal</span><span>Bs. {{ factura.subtotal | number:'1.2-2' }}</span></div>
+        <div class="detalle-fila"><span>IVA (16%)</span><span>Bs. {{ factura.iva | number:'1.2-2' }}</span></div>
+        <div class="detalle-fila total"><span>TOTAL</span><span>Bs. {{ factura.total | number:'1.2-2' }}</span></div>
+      </div>
+      <button class="btn-cerrar" (click)="cerrarModal()">Cerrar</button>
+    </div>
+  </div>
+}

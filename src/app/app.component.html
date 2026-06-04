@@ -1,0 +1,15 @@
+<header>
+  <h1>✨ Glowly.sa</h1>
+  <p>Moda y estilo con luz propia 🌟</p>
+</header>
+
+<main>
+  <app-catalogo />
+  <app-factura />
+</main>
+
+@if (notificacion) {
+  <div class="notificacion" [class.exito]="notificacion.tipo === 'exito'" [class.error]="notificacion.tipo === 'error'">
+    {{ notificacion.msg }}
+  </div>
+}
