@@ -40,8 +40,22 @@ export class FacturaService {
       id: 4, nombre: 'Top sencillo', precio: 25.00, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-sencillo.jpeg',
       colores: [
+        { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/top-simple-blanco.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-simple-negro.jpeg' },
         { nombre: 'Rojo', hex: '#bd1111', imagen: 'assets/images/top-simple-rojo.jpeg' },
+      ],
+    },
+    {
+      id: 5, nombre: 'Short Premium', precio: 38.00, categoria: 'Shorts', icono: '🩳',
+      imagen: 'assets/images/short-premium-azul.jpeg',
+      colores: [
+        { nombre: 'Azul', hex: '#1976d2', imagen: 'assets/images/short-premium-azul.jpeg' },
+        { nombre: 'Celeste', hex: '#81d4fa', imagen: 'assets/images/short-premium-celeste.jpeg' },
+        { nombre: 'Lila', hex: '#ce93d8', imagen: 'assets/images/short-premium-lila.png' },
+        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/short-premium-rosado.jpeg' },
+        { nombre: 'Verde', hex: '#66bb6a', imagen: 'assets/images/short-premium-verde.jpeg' },
+        { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/short-premiun-morado.jpeg' },
+        { nombre: 'Rojo', hex: '#d32f2f', imagen: 'assets/images/short-premiun-rojo.jpeg' },
       ],
     }
   ];
