@@ -41,7 +41,7 @@ export class FacturaService {
       imagen: 'assets/images/top-sencillo.jpeg',
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-simple-negro.jpeg' },
-        { nombre: 'Rojo', hex: '#9e9e9e', imagen: 'assets/images/top-simple-rojo.jpeg' },
+        { nombre: 'Rojo', hex: '#bd1111', imagen: 'assets/images/top-simple-rojo.jpeg' },
       ],
     }
   ];
