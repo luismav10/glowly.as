@@ -46,14 +46,41 @@ export class FacturaService {
       ],
     },
     {
+      id: 6, nombre: 'Top Animal Print', precio: 30.00, categoria: 'Tops', icono: '👚',
+      imagen: 'assets/images/top-animal-print-gris.jpeg',
+      colores: [
+        { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/top-animal-print-gris.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/top-animal-print-marron.jpeg' },
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-animal-print-negro.jpeg' },
+      ],
+    },
+    {
+      id: 7, nombre: 'Leggins Deportivos', precio: 40.00, categoria: 'Leggins', icono: '🩱',
+      imagen: 'assets/images/leggins-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-negro.jpeg' },
+        { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/leggins-gris.jpeg' },
+        { nombre: 'Azul', hex: '#1976d2', imagen: 'assets/images/leggins-azul.jpeg' },
+        { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/leggins-vino.jpeg' },
+      ],
+    },
+    {
+      id: 8, nombre: 'Short Chimbo', precio: 28.00, categoria: 'Shorts', icono: '🩳',
+      imagen: 'assets/images/short-sencillo-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/short-sencillo-negro.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/short-sencillo-marron.jpeg' },
+      ],
+    },
+    {
       id: 5, nombre: 'Short Premium', precio: 38.00, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-premium-azul.jpeg',
       colores: [
         { nombre: 'Azul', hex: '#1976d2', imagen: 'assets/images/short-premium-azul.jpeg' },
-        { nombre: 'Celeste', hex: '#81d4fa', imagen: 'assets/images/short-premium-celeste.jpeg' },
+        { nombre: 'Turquesa', hex: '#2fb3f0', imagen: 'assets/images/short-premium-celeste.jpeg' },
         { nombre: 'Lila', hex: '#ce93d8', imagen: 'assets/images/short-premium-lila.png' },
         { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/short-premium-rosado.jpeg' },
-        { nombre: 'Verde', hex: '#66bb6a', imagen: 'assets/images/short-premium-verde.jpeg' },
+        { nombre: 'Negro', hex: '#000000', imagen: 'assets/images/short-premium-negro.jpeg' },
         { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/short-premiun-morado.jpeg' },
         { nombre: 'Rojo', hex: '#d32f2f', imagen: 'assets/images/short-premiun-rojo.jpeg' },
       ],

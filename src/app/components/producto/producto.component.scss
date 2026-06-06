@@ -72,23 +72,8 @@
       margin: 6px 0;
     }
 
-    .btn-add {
-      margin-top: 8px;
-      padding: 8px 18px;
-      border: none;
-      border-radius: 25px;
-      background: linear-gradient(135deg, #ce93d8, #b39ddb);
-      color: white;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.9em;
-      transition: 0.3s;
+    
 
-      &:hover {
-        background: linear-gradient(135deg, #e1bee7, #ce93d8);
-        transform: scale(1.05);
-      }
-    }
   }
 
   .colores-panel {

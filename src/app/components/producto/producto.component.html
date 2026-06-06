@@ -11,7 +11,6 @@
     <h3>{{ product().nombre }}</h3>
     <span class="categoria">{{ product().categoria }}</span>
     <div class="precio">Bs. {{ product().precio | number:'1.2-2' }}</div>
-    <button class="btn-add" (click)="agregar(); $event.stopPropagation()">Añadir</button>
   </div>
 
   <div class="colores-panel" [@expandColores]="mostrarColores()" (click)="$event.stopPropagation()">

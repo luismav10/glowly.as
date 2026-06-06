@@ -1,4 +1,4 @@
-import { Component, input, output, signal, OnInit } from '@angular/core';
+import { Component, input, signal, OnInit } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Product, ColorVariant } from '../../models/product';
@@ -18,7 +18,6 @@ import { Product, ColorVariant } from '../../models/product';
 })
 export class ProductoComponent implements OnInit {
   product = input.required<Product>();
-  add = output<Product>();
 
   mostrarColores = signal(false);
   colorSeleccionado = signal<ColorVariant>({ nombre: '', hex: '', imagen: '' });
@@ -33,9 +32,5 @@ export class ProductoComponent implements OnInit {
 
   seleccionarColor(color: ColorVariant) {
     this.colorSeleccionado.set(color);
-  }
-
-  agregar() {
-    this.add.emit(this.product());
   }
 }
