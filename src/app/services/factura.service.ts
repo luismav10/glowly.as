@@ -59,7 +59,7 @@ export class FacturaService {
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-animal-print-negro.jpeg' },
       ],
     },
-    
+
     {
       id: 7, nombre: 'Leggins Deportivos', precio: 20, categoria: 'Leggins', icono: '🩱',
       imagen: 'assets/images/leggins-negro.jpeg',
@@ -81,7 +81,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 9, nombre: 'Short Corte V Gris', precio: 9, categoria: 'Shorts', icono: '🩳',
+      id: 9, nombre: 'Short Corte V', precio: 9, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-corte-v-gris.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
