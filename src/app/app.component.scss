@@ -22,16 +22,22 @@ header {
 
   .header-text {
     h1 {
-      font-size: 2.5em;
+      font-size: 3.2em;
       color: #4a2c5e;
       letter-spacing: 2px;
       font-weight: 700;
+      font-family: 'Quicksand', sans-serif;
+      font-style: italic;
+      text-shadow: 0 2px 4px rgba(74, 44, 94, 0.1);
+      line-height: 1.2;
     }
 
     p {
       color: #7b4a8e;
-      font-size: 1.1em;
-      margin-top: 4px;
+      font-size: 1.15em;
+      margin-top: 6px;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
   }
 
@@ -48,12 +54,12 @@ header {
 
     .header-text {
       h1 {
-        font-size: 1.3em;
+        font-size: 2em;
         letter-spacing: 1px;
       }
 
       p {
-        font-size: 0.85em;
+        font-size: 0.9em;
       }
     }
   }

@@ -8,7 +8,7 @@ import { Invoice } from '../models/invoice';
 export class FacturaService {
   private productos: Product[] = [
     {
-      id: 1, nombre: 'Sudaera Premium', precio: 9, categoria: 'Buzos', icono: '🧥',
+      id: 1, nombre: 'Franela de Compresión', precio: 9, categoria: 'Buzos', icono: '🧥',
       imagen: 'assets/images/buzo-blanco.jpeg',
       tallas: ['XS','S', 'M', 'L'],
       colores: [
@@ -61,7 +61,7 @@ export class FacturaService {
     },
 
     {
-      id: 7, nombre: 'Leggins Deportivos', precio: 20, categoria: 'Leggins', icono: '🩱',
+      id: 7, nombre: 'Pants Deportivos', precio: 16, categoria: 'Leggins', icono: '🩱',
       imagen: 'assets/images/leggins-negro.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
@@ -72,7 +72,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 8, nombre: 'Short Sencillo', precio: 9, categoria: 'Shorts', icono: '🩳',
+      id: 8, nombre: 'Short Sencillo', precio: 8, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-sencillo-negro.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
@@ -81,7 +81,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 8, nombre: 'Short Corte V', precio: 9, categoria: 'Shorts', icono: '🩳',
+      id: 8, nombre: 'Short Corte V', precio: 8, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-corte-v-gris.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
@@ -89,7 +89,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 5, nombre: 'Short Premium', precio: 8, categoria: 'Shorts', icono: '🩳',
+      id: 5, nombre: 'Short Premium', precio: 11, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-premium-azul.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
