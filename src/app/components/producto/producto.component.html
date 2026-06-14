@@ -10,7 +10,13 @@
   <div class="info">
     <h3>{{ product().nombre }}</h3>
     <span class="categoria">{{ product().categoria }}</span>
-    <div class="precio">Bs. {{ product().precio | number:'1.2-2' }}</div>
+    <div class="precio">$ {{ product().precio | number:'1.2-2' }}</div>
+    <div class="tallas">
+      <span class="tallas-titulo">Tallas:</span>
+      @for (talla of product().tallas; track talla) {
+        <span class="talla-badge">{{ talla }}</span>
+      }
+    </div>
   </div>
 
   <div class="colores-panel" [@expandColores]="mostrarColores()" (click)="$event.stopPropagation()">

@@ -8,8 +8,9 @@ import { Invoice } from '../models/invoice';
 export class FacturaService {
   private productos: Product[] = [
     {
-      id: 1, nombre: 'Sudaera Premium', precio: 55.00, categoria: 'Buzos', icono: '🧥',
+      id: 1, nombre: 'Sudaera Premium', precio: 9, categoria: 'Buzos', icono: '🧥',
       imagen: 'assets/images/buzo-blanco.jpeg',
+      tallas: ['XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/buzo-blanco.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/buzo-gris.jpeg' },
@@ -17,8 +18,9 @@ export class FacturaService {
       ],
     },
     {
-      id: 2, nombre: 'Top Premium', precio: 32.00, categoria: 'Tops', icono: '👚',
+      id: 2, nombre: 'Top Premium', precio: 9, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-gris.jpeg',
+      tallas: [ 'XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/top-blanco.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/top-gris.jpeg' },
@@ -27,8 +29,9 @@ export class FacturaService {
       ],
     },
     {
-      id: 3, nombre: 'Set Musera Sport', precio: 45.00, categoria: 'Sets', icono: '👕',
+      id: 3, nombre: 'Set Musera Sport', precio: 20, categoria: 'Sets', icono: '👕',
       imagen: 'assets/images/set-musera-sport-negro.jpeg',
+      tallas: [ 'XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/set-musera-sport-negro.jpeg' },
         { nombre: 'Crema', hex: '#f5e6d3', imagen: 'assets/images/set-musera-sport-crema.jpeg' },
@@ -37,8 +40,9 @@ export class FacturaService {
       ],
     },
     {
-      id: 4, nombre: 'Top sencillo', precio: 25.00, categoria: 'Tops', icono: '👚',
+      id: 4, nombre: 'Top sencillo', precio: 9, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-sencillo.jpeg',
+      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/top-simple-blanco.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-simple-negro.jpeg' },
@@ -46,8 +50,9 @@ export class FacturaService {
       ],
     },
     {
-      id: 6, nombre: 'Top Animal Print', precio: 30.00, categoria: 'Tops', icono: '👚',
+      id: 6, nombre: 'Top Animal Print', precio: 9, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-animal-print-gris.jpeg',
+      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/top-animal-print-gris.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/top-animal-print-marron.jpeg' },
@@ -55,8 +60,9 @@ export class FacturaService {
       ],
     },
     {
-      id: 7, nombre: 'Leggins Deportivos', precio: 40.00, categoria: 'Leggins', icono: '🩱',
+      id: 7, nombre: 'Leggins Deportivos', precio: 20, categoria: 'Leggins', icono: '🩱',
       imagen: 'assets/images/leggins-negro.jpeg',
+      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-negro.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/leggins-gris.jpeg' },
@@ -65,19 +71,30 @@ export class FacturaService {
       ],
     },
     {
-      id: 8, nombre: 'Short Chimbo', precio: 28.00, categoria: 'Shorts', icono: '🩳',
+      id: 8, nombre: 'Short Sencillo', precio: 9, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-sencillo-negro.jpeg',
+      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/short-sencillo-negro.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/short-sencillo-marron.jpeg' },
       ],
     },
     {
-      id: 5, nombre: 'Short Premium', precio: 38.00, categoria: 'Shorts', icono: '🩳',
+      id: 9, nombre: 'Short Corte V Gris', precio: 9, categoria: 'Shorts', icono: '🩳',
+      imagen: 'assets/images/short-corte-v-gris.jpeg',
+      tallas: ['S', 'M', 'L', 'XL'],
+      colores: [
+        { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/short-corte-v-gris.jpeg' },
+      ],
+    },
+    {
+      id: 5, nombre: 'Short Premium', precio: 10, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-premium-azul.jpeg',
+      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Azul', hex: '#1976d2', imagen: 'assets/images/short-premium-azul.jpeg' },
         { nombre: 'Turquesa', hex: '#2fb3f0', imagen: 'assets/images/short-premium-celeste.jpeg' },
+        { nombre: 'Celeste', hex: '#87ceeb', imagen: 'assets/images/short-premiun-celeste.jpeg' },
         { nombre: 'Lila', hex: '#ce93d8', imagen: 'assets/images/short-premium-lila.png' },
         { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/short-premium-rosado.jpeg' },
         { nombre: 'Negro', hex: '#000000', imagen: 'assets/images/short-premium-negro.jpeg' },
