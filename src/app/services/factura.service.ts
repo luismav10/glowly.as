@@ -59,6 +59,7 @@ export class FacturaService {
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-animal-print-negro.jpeg' },
       ],
     },
+    
     {
       id: 7, nombre: 'Leggins Deportivos', precio: 20, categoria: 'Leggins', icono: '🩱',
       imagen: 'assets/images/leggins-negro.jpeg',
