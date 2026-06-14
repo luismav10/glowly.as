@@ -1,6 +1,21 @@
-<h2> Catálogo</h2>
+<div class="buscador-wrapper">
+  <input
+    type="text"
+    placeholder="Buscar producto..."
+    class="buscador"
+    [ngModel]="searchTerm()"
+    (ngModelChange)="searchTerm.set($event)"
+  />
+  @if (searchTerm()) {
+    <button class="limpiar" (click)="searchTerm.set('')">✕</button>
+  }
+</div>
+
+<h2>Catálogo</h2>
 <div class="productos-grid">
-  @for (product of productos$ | async; track product.id) {
+  @for (product of filteredProducts(); track product.id) {
     <app-producto [product]="product" />
+  } @empty {
+    <p class="sin-resultados">No se encontraron productos para "{{ searchTerm() }}"</p>
   }
 </div>
