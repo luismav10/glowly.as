@@ -29,7 +29,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 3, nombre: 'Set Musera Sport', precio: 20, categoria: 'Sets', icono: '👕',
+      id: 3, nombre: 'Set Musera Sport', precio: 19, categoria: 'Sets', icono: '👕',
       imagen: 'assets/images/set-musera-sport-negro.jpeg',
       tallas: [ 'XS','S', 'M', 'L'],
       colores: [
@@ -81,7 +81,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 9, nombre: 'Short Corte V', precio: 9, categoria: 'Shorts', icono: '🩳',
+      id: 8, nombre: 'Short Corte V', precio: 9, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-corte-v-gris.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
@@ -89,7 +89,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 5, nombre: 'Short Premium', precio: 10, categoria: 'Shorts', icono: '🩳',
+      id: 5, nombre: 'Short Premium', precio: 8, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-premium-azul.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
