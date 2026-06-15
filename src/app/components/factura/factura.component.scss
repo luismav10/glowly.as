@@ -1,5 +1,5 @@
 h2 {
-  color: #7b2d8e;
+  color: #4a2c5e;
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.6em;
@@ -8,7 +8,7 @@ h2 {
 }
 
 .section-title {
-  color: #7b4a8e;
+  color: #4a2c5e;
   margin: 15px 0 8px;
   font-size: 1.1em;
 }
@@ -30,13 +30,13 @@ input, select {
     box-shadow: 0 0 12px rgba(206, 147, 216, 0.3);
   }
 
-  &::placeholder { color: #b08cc0; }
+  &::placeholder { color: #4a2c5e; }
 }
 
 select option { background: #f3e8ff; color: #4a2c5e; }
 
 label {
-  color: #7b4a8e;
+  color: #4a2c5e;
   font-size: 0.9em;
   font-weight: 600;
 }
@@ -51,7 +51,7 @@ label {
     background: rgba(206, 147, 216, 0.2);
     padding: 10px 8px;
     text-align: left;
-    color: #6a2d7a;
+    color: #4a2c5e;
     font-weight: 600;
   }
 
@@ -87,7 +87,7 @@ label {
 
 .carrito-vacio {
   text-align: center;
-  color: #b08cc0;
+  color: #4a2c5e;
   padding: 30px 0;
   font-style: italic;
 }
@@ -106,7 +106,7 @@ label {
     &.total {
       font-size: 1.4em;
       font-weight: bold;
-      color: #7b2d8e;
+      color: #4a2c5e;
       padding-top: 8px;
 
       span:last-child {
@@ -171,7 +171,7 @@ label {
   overflow-y: auto;
 
   h2 {
-    color: #7b2d8e;
+    color: #4a2c5e;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -191,9 +191,9 @@ label {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .rif { color: #8e5a9e; font-size: 0.85em; margin-top: 3px; }
-    .factura-nro { color: #7b4a8e; margin-top: 5px; }
-    .fecha { color: #8e5a9e; font-size: 0.85em; }
+    .rif { color: #4a2c5e; font-size: 0.85em; margin-top: 3px; }
+    .factura-nro { color: #4a2c5e; margin-top: 5px; }
+    .fecha { color: #4a2c5e; font-size: 0.85em; }
   }
 
   .items-section {
@@ -214,7 +214,7 @@ label {
   &.total {
     font-size: 1.3em;
     font-weight: bold;
-    color: #7b2d8e;
+    color: #4a2c5e;
     border-top: 2px solid rgba(206, 147, 216, 0.2);
     margin-top: 10px;
     padding-top: 10px;

@@ -51,14 +51,14 @@
     text-align: center;
 
     h3 {
-      color: #6a2d7a;
+      color: #4a2c5e;
       font-size: 1em;
       margin-bottom: 4px;
     }
 
     .categoria {
       font-size: 0.8em;
-      color: #8e5a9e;
+      color: #4a2c5e;
       background: rgba(206, 147, 216, 0.2);
       padding: 2px 10px;
       border-radius: 20px;
@@ -66,7 +66,7 @@
     }
 
     .precio {
-      color: #9c4cb5;
+      color: #4a2c5e;
       font-weight: bold;
       font-size: 1.15em;
       margin: 6px 0;
@@ -81,13 +81,13 @@
 
       .tallas-titulo {
         font-size: 0.75em;
-        color: #7b4a8e;
+        color: #4a2c5e;
         font-weight: 600;
       }
 
       .talla-badge {
         background: rgba(206, 147, 216, 0.2);
-        color: #6a2d7a;
+        color: #4a2c5e;
         font-size: 0.7em;
         padding: 2px 8px;
         border-radius: 10px;
@@ -102,7 +102,7 @@
 
     .colores-titulo {
       font-size: 0.8em;
-      color: #7b4a8e;
+      color: #4a2c5e;
       margin-bottom: 8px;
       font-weight: 600;
     }
@@ -134,7 +134,7 @@
       }
 
       &.activo {
-        border-color: #9c4cb5;
+        border-color: #4a2c5e;
         box-shadow: 0 0 0 2px rgba(156, 76, 181, 0.3);
       }
 
@@ -144,7 +144,7 @@
         gap: 4px;
         padding: 4px 6px;
         font-size: 0.7em;
-        color: #555;
+        color: #4a2c5e;
         white-space: nowrap;
       }
     }

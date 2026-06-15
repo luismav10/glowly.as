@@ -8,13 +8,16 @@ import { Invoice } from '../models/invoice';
 export class FacturaService {
   private productos: Product[] = [
     {
-      id: 1, nombre: 'Franela de Compresión', precio: 9, categoria: 'Buzos', icono: '🧥',
+      id: 1, nombre: 'Franela de Compresión', precio: 9, categoria: 'Franelas de Compresión', icono: '🧥',
       imagen: 'assets/images/buzo-blanco.jpeg',
       tallas: ['XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/buzo-blanco.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/buzo-gris.jpeg' },
         { nombre: 'Gris Claro', hex: '#bdbdbd', imagen: 'assets/images/buzo-gris-claro.jpeg' },
+        { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/buzo-vinotinto.jpeg' },
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/buzo-negro.jpeg' },
+        { nombre: 'Azul Marino', hex: '#1a237e', imagen: 'assets/images/buzo-azul-marino.jpeg' },
       ],
     },
     {
@@ -61,7 +64,7 @@ export class FacturaService {
     },
 
     {
-      id: 7, nombre: 'Pants Deportivos', precio: 16, categoria: 'Leggins', icono: '🩱',
+      id: 7, nombre: 'Pants Deportivos', precio: 16, categoria: 'Pants', icono: '🩱',
       imagen: 'assets/images/leggins-negro.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
@@ -81,7 +84,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 8, nombre: 'Short Corte V', precio: 8, categoria: 'Shorts', icono: '🩳',
+      id: 10, nombre: 'Short Corte V', precio: 8, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-corte-v-gris.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
@@ -102,7 +105,32 @@ export class FacturaService {
         { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/short-premiun-morado.jpeg' },
         { nombre: 'Rojo', hex: '#d32f2f', imagen: 'assets/images/short-premiun-rojo.jpeg' },
       ],
-    }
+    },
+    {
+      id: 9, nombre: 'Set Musera Sport', precio: 19, categoria: 'Sets', icono: '👕',
+      imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg',
+      tallas: ['XS', 'S', 'M', 'L'],
+      colores: [
+        { nombre: 'Amarillo', hex: '#fdd835', imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg' },
+      ],
+    },
+    {
+      id: 12, nombre: 'Pants Deportivos', precio: 12, categoria: 'Pants', icono: '🩱',
+      imagen: 'assets/images/leggins-marron.jpeg',
+      tallas: ['S'],
+      colores: [
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/leggins-marron.jpeg' },
+      ],
+    },
+    {
+      id: 11, nombre: 'Enterizo Bota Campana', precio: 15, categoria: 'Enterizos', icono: '👗',
+      imagen: 'assets/images/enterizo-bota-campana.jpeg',
+      tallas: ['S', 'M', 'L'],
+      colores: [
+        { nombre: 'Azul', hex: '#093d70', imagen: 'assets/images/enterizo-bota-campana-azul-marino.jpeg' },
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-bota-campana-negro.jpeg' },
+      ],
+    },
   ];
 
   private carritoSubject = new BehaviorSubject<CartItem[]>([]);

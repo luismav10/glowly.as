@@ -15,12 +15,20 @@ export class CatalogoComponent {
   private productos = toSignal(this.facturaService.productos$, { initialValue: [] });
 
   searchTerm = signal('');
+  selectedCategory = signal('');
+
+  categories = computed(() => {
+    const cats = new Set(this.productos().map(p => p.categoria));
+    return ['', ...cats];
+  });
 
   filteredProducts = computed(() => {
     const term = this.searchTerm().toLowerCase().trim();
-    if (!term) return this.productos();
-    return this.productos().filter(
-      p => p.nombre.toLowerCase().includes(term) || p.categoria.toLowerCase().includes(term)
-    );
+    const cat = this.selectedCategory();
+    return this.productos().filter(p => {
+      const matchesSearch = !term || p.nombre.toLowerCase().includes(term) || p.categoria.toLowerCase().includes(term);
+      const matchesCategory = !cat || p.categoria === cat;
+      return matchesSearch && matchesCategory;
+    });
   });
 }

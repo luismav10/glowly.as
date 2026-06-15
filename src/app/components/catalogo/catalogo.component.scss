@@ -1,6 +1,6 @@
 .buscador-wrapper {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   max-width: 400px;
 
   .buscador {
@@ -17,7 +17,7 @@
     box-sizing: border-box;
 
     &::placeholder {
-      color: #b39ddb;
+      color: #4a2c5e;
     }
 
     &:focus {
@@ -34,7 +34,7 @@
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #b39ddb;
+    color: #4a2c5e;
     font-size: 1em;
     cursor: pointer;
     padding: 4px 8px;
@@ -46,8 +46,40 @@
   }
 }
 
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+
+  .cat-btn {
+    padding: 6px 16px;
+    border: 1px solid rgba(206, 147, 216, 0.3);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    color: #4a2c5e;
+    font-size: 0.85em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: inherit;
+
+    &:hover {
+      background: rgba(206, 147, 216, 0.2);
+      border-color: #4a2c5e
+    }
+
+    &.activo {
+      background: #4a2c5e;
+      color: white;
+      border-color: #4a2c5e
+    }
+  }
+}
+
 h2 {
-  color: #7b2d8e;
+  color: #4a2c5e;
   margin-bottom: 20px;
   font-size: 1.6em;
   border-bottom: 2px solid rgba(156, 76, 181, 0.2);
@@ -63,7 +95,7 @@ h2 {
 .sin-resultados {
   grid-column: 1 / -1;
   text-align: center;
-  color: #b39ddb;
+  color: #4a2c5e;
   font-size: 1.1em;
   padding: 40px 0;
 }
