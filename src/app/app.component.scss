@@ -64,9 +64,10 @@ header {
   }
 
   .logo {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
     border-radius: 12px;
+    padding: 8px;
     transform: translateY(-4px);
   }
 
@@ -99,7 +100,7 @@ header {
     }
 
     .logo {
-      max-width: 120px;
+      max-width: 200px;
       transform: translateY(-3px);
     }
 

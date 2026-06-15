@@ -70,7 +70,7 @@ export class FacturaService {
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-negro.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/leggins-gris.jpeg' },
-        { nombre: 'Azul', hex: '#1976d2', imagen: 'assets/images/leggins-azul.jpeg' },
+        { nombre: 'Azul', hex: '#083766', imagen: 'assets/images/leggins-azul.jpeg' },
         { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/leggins-vino.jpeg' },
       ],
     },
@@ -96,7 +96,7 @@ export class FacturaService {
       imagen: 'assets/images/short-premium-azul.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
-        { nombre: 'Azul', hex: '#1976d2', imagen: 'assets/images/short-premium-azul.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/short-premium-azul.jpeg' },
         { nombre: 'Turquesa', hex: '#2fb3f0', imagen: 'assets/images/short-premium-celeste.jpeg' },
         { nombre: 'Celeste', hex: '#87ceeb', imagen: 'assets/images/short-premiun-celeste.jpeg' },
         { nombre: 'Lila', hex: '#ce93d8', imagen: 'assets/images/short-premium-lila.png' },
@@ -129,6 +129,14 @@ export class FacturaService {
       colores: [
         { nombre: 'Azul', hex: '#093d70', imagen: 'assets/images/enterizo-bota-campana-azul-marino.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-bota-campana-negro.jpeg' },
+      ],
+    },
+    {
+      id: 13, nombre: 'Enterizo Corto', precio: 12, categoria: 'Enterizos', icono: '👗',
+      imagen: 'assets/images/enterizo-negro.jpeg',
+      tallas: ['S', 'M', 'L'],
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-negro.jpeg' },
       ],
     },
   ];
