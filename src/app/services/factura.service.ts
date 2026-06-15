@@ -40,7 +40,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 4, nombre: 'Top sencillo', precio: 9, categoria: 'Tops', icono: '👚',
+      id: 4, nombre: 'Blusa de Tiros', precio: 11, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-sencillo.jpeg',
       tallas: ['S', 'M', 'L', 'XL'],
       colores: [
