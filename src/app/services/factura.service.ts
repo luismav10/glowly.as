@@ -37,7 +37,7 @@ export class FacturaService {
       tallas: [ 'XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/set-musera-sport-negro.jpeg' },
-        { nombre: 'Crema', hex: '#f5e6d3', imagen: 'assets/images/set-musera-sport-crema.jpeg' },
+        { nombre: 'Amarillo', hex: '#ffee54', imagen: 'assets/images/set-musera-sport-crema.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/set-musera-sport-negr.jpeg' },
         { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/set-musera-sport-rosado.jpeg' },
       ],
@@ -111,11 +111,11 @@ export class FacturaService {
       imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg',
       tallas: ['XS', 'S', 'M', 'L'],
       colores: [
-        { nombre: 'Amarillo', hex: '#fdd835', imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg' },
+        { nombre: 'Amarillo', hex: '#f7f44b', imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg' },
       ],
     },
     {
-      id: 12, nombre: 'Pants Deportivos', precio: 12, categoria: 'Pants', icono: '🩱',
+      id: 12, nombre: 'Leggins', precio: 12, categoria: 'Leggins', icono: '🩱',
       imagen: 'assets/images/leggins-marron.jpeg',
       tallas: ['S'],
       colores: [
