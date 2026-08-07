@@ -73,29 +73,6 @@
       margin: 6px 0;
     }
 
-    .tallas {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 6px;
-
-      .tallas-titulo {
-        font-size: 0.75em;
-        color: #4a2c5e;
-        font-weight: 600;
-      }
-
-      .talla-badge {
-        background: rgba(206, 147, 216, 0.2);
-        color: #4a2c5e;
-        font-size: 0.7em;
-        padding: 2px 8px;
-        border-radius: 10px;
-        font-weight: 600;
-      }
-    }
-
   }
 
   .colores-panel {
