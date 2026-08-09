@@ -12,5 +12,4 @@ export interface Product {
   icono: string;
   imagen: string;
   colores: ColorVariant[];
-  tallas: string[];
 }

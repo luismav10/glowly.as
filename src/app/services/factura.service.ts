@@ -10,7 +10,6 @@ export class FacturaService {
     {
       id: 1, nombre: 'Franela de Compresión', precio: 9, categoria: 'Franelas de Compresión', icono: '🧥',
       imagen: 'assets/images/buzo-blanco.jpeg',
-      tallas: ['XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/buzo-blanco.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/buzo-gris.jpeg' },
@@ -23,7 +22,6 @@ export class FacturaService {
     {
       id: 2, nombre: 'Top Premium', precio: 9, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-gris.jpeg',
-      tallas: [ 'XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/top-blanco.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/top-gris.jpeg' },
@@ -34,7 +32,6 @@ export class FacturaService {
     {
       id: 3, nombre: 'Set Musera Sport', precio: 19, categoria: 'Sets', icono: '👕',
       imagen: 'assets/images/set-musera-sport-negro.jpeg',
-      tallas: [ 'XS','S', 'M', 'L'],
       colores: [
         { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/set-musera-sport-negro.jpeg' },
         { nombre: 'Amarillo', hex: '#ffee54', imagen: 'assets/images/set-musera-sport-crema.jpeg' },
@@ -45,7 +42,6 @@ export class FacturaService {
     {
       id: 4, nombre: 'Blusa de Tiros', precio: 11, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-sencillo.jpeg',
-      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/top-simple-blanco.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-simple-negro.jpeg' },
@@ -55,7 +51,6 @@ export class FacturaService {
     {
       id: 6, nombre: 'Top Animal Print', precio: 9, categoria: 'Tops', icono: '👚',
       imagen: 'assets/images/top-animal-print-gris.jpeg',
-      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/top-animal-print-gris.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/top-animal-print-marron.jpeg' },
@@ -66,7 +61,6 @@ export class FacturaService {
     {
       id: 7, nombre: 'Pants Deportivos', precio: 16, categoria: 'Pants', icono: '🩱',
       imagen: 'assets/images/leggins-negro.jpeg',
-      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-negro.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/leggins-gris.jpeg' },
@@ -77,7 +71,6 @@ export class FacturaService {
     {
       id: 8, nombre: 'Short Sencillo', precio: 8, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-sencillo-negro.jpeg',
-      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/short-sencillo-negro.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/short-sencillo-marron.jpeg' },
@@ -86,7 +79,6 @@ export class FacturaService {
     {
       id: 10, nombre: 'Short Corte V', precio: 8, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-corte-v-gris.jpeg',
-      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/short-corte-v-gris.jpeg' },
       ],
@@ -94,7 +86,6 @@ export class FacturaService {
     {
       id: 5, nombre: 'Short Premium', precio: 11, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-premium-azul.jpeg',
-      tallas: ['S', 'M', 'L', 'XL'],
       colores: [
         { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/short-premium-azul.jpeg' },
         { nombre: 'Turquesa', hex: '#2fb3f0', imagen: 'assets/images/short-premium-celeste.jpeg' },
@@ -109,7 +100,6 @@ export class FacturaService {
     {
       id: 9, nombre: 'Set Musera Sport', precio: 19, categoria: 'Sets', icono: '👕',
       imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg',
-      tallas: ['XS', 'S', 'M', 'L'],
       colores: [
         { nombre: 'Amarillo', hex: '#f7f44b', imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg' },
       ],
@@ -117,7 +107,6 @@ export class FacturaService {
     {
       id: 12, nombre: 'Leggins', precio: 12, categoria: 'Leggins', icono: '🩱',
       imagen: 'assets/images/leggins-marron.jpeg',
-      tallas: ['S'],
       colores: [
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/leggins-marron.jpeg' },
       ],
@@ -125,7 +114,6 @@ export class FacturaService {
     {
       id: 11, nombre: 'Enterizo Bota Campana', precio: 15, categoria: 'Enterizos', icono: '👗',
       imagen: 'assets/images/enterizo-bota-campana.jpeg',
-      tallas: ['S', 'M', 'L'],
       colores: [
         { nombre: 'Azul', hex: '#093d70', imagen: 'assets/images/enterizo-bota-campana-azul-marino.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-bota-campana-negro.jpeg' },
@@ -134,9 +122,63 @@ export class FacturaService {
     {
       id: 13, nombre: 'Enterizo Corto', precio: 12, categoria: 'Enterizos', icono: '👗',
       imagen: 'assets/images/enterizo-negro.jpeg',
-      tallas: ['S', 'M', 'L'],
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-negro.jpeg' },
+      ],
+    },
+    {
+      id: 14, nombre: 'Enterizo Musera Sport', precio: 15, categoria: 'Enterizos', icono: '👗',
+      imagen: 'assets/images/enterizo-musera-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-musera-negro.jpeg' },
+        { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/enterizo-musera-morado.jpeg' },
+      ],
+    },
+    {
+      id: 15, nombre: 'Short Running', precio: 10, categoria: 'Shorts', icono: '🩳',
+      imagen: 'assets/images/short-running-negro.jpeg',
+      colores: [
+        { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/short-running-blanco.jpeg' },
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/short-running-negro.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/short-running-azul.jpeg' },
+        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/short-running-rosado.jpeg' },
+      ],
+    },
+    {
+      id: 16, nombre: 'Enterizo Básico', precio: 10, categoria: 'Enterizos', icono: '👗',
+      imagen: 'assets/images/enterizo-basico.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-basico.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/enterizo-basico-azul.jpeg' },
+      ],
+    },
+    {
+      id: 17, nombre: 'Enterizo Bota Ancha', precio: 15, categoria: 'Enterizos', icono: '👗',
+      imagen: 'assets/images/enterizo-bota-ancha-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-bota-ancha-negro.jpeg' },
+        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/enterizo-bota-ancha-rosado.jpeg' },
+      ],
+    },
+    {
+      id: 18, nombre: 'Set Animal Print', precio: 19, categoria: 'Sets', icono: '👕',
+      imagen: 'assets/images/set-animal-print.jpeg',
+      colores: [
+        { nombre: 'Animal Print', hex: '#7a5c44', imagen: 'assets/images/set-animal-print.jpeg' },
+      ],
+    },
+    {
+      id: 19, nombre: 'Set Morado', precio: 19, categoria: 'Sets', icono: '👕',
+      imagen: 'assets/images/enterizo-morado.jpeg',
+      colores: [
+        { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/enterizo-morado.jpeg' },
+      ],
+    },
+    {
+      id: 20, nombre: 'Medias Básicas', precio: 5, categoria: 'Medias', icono: '🧦',
+      imagen: 'assets/images/medias-basicas.jpeg',
+      colores: [
+        { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/medias-basicas.jpeg' },
       ],
     },
   ];

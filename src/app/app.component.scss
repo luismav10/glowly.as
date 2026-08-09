@@ -76,11 +76,15 @@ header {
       font-size: 2.8em;
       color: #4a2c5e;
       letter-spacing: 2px;
-      font-weight: 700;
-      font-family: 'Quicksand', sans-serif;
-      font-style: italic;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
       text-shadow: 0 2px 4px rgba(74, 44, 94, 0.1);
       line-height: 1.2;
+
+      .glowly {
+        font-weight: 700;
+      }
     }
 
     p {
