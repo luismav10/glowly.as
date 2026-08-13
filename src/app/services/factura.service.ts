@@ -127,7 +127,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 14, nombre: 'Enterizo Musera Sport', precio: 15, categoria: 'Enterizos', icono: '👗',
+      id: 14, nombre: 'Enterizo Musera Sport', precio: 22, categoria: 'Enterizos', icono: '👗',
       imagen: 'assets/images/enterizo-musera-negro.jpeg',
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-musera-negro.jpeg' },
@@ -145,7 +145,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 16, nombre: 'Enterizo Básico', precio: 10, categoria: 'Enterizos', icono: '👗',
+      id: 16, nombre: 'Enterizo Básico', precio: 20, categoria: 'Enterizos', icono: '👗',
       imagen: 'assets/images/enterizo-basico.jpeg',
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-basico.jpeg' },
@@ -153,7 +153,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 17, nombre: 'Enterizo Bota Ancha', precio: 15, categoria: 'Enterizos', icono: '👗',
+      id: 17, nombre: 'Enterizo Bota Ancha', precio: 26, categoria: 'Enterizos', icono: '👗',
       imagen: 'assets/images/enterizo-bota-ancha-negro.jpeg',
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-bota-ancha-negro.jpeg' },
@@ -175,7 +175,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 20, nombre: 'Medias Básicas', precio: 5, categoria: 'Medias', icono: '🧦',
+      id: 20, nombre: 'Medias Básicas', precio: 1.5, categoria: 'Medias', icono: '🧦',
       imagen: 'assets/images/medias-basicas.jpeg',
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/medias-basicas.jpeg' },
