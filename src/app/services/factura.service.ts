@@ -135,7 +135,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 15, nombre: 'Short Running', precio: 10, categoria: 'Shorts', icono: '🩳',
+      id: 15, nombre: 'Falda Short Running', precio: 12, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-running-negro.jpeg',
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/short-running-blanco.jpeg' },
@@ -179,6 +179,43 @@ export class FacturaService {
       imagen: 'assets/images/medias-basicas.jpeg',
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/medias-basicas.jpeg' },
+      ],
+    },
+    {
+      id: 21, nombre: 'Vestido Deportivo', precio: 15, categoria: 'Vestidos', icono: '👗',
+      imagen: 'assets/images/vestido-deportivo-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/vestido-deportivo-negro.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/vestido-deportivo-azul.jpeg' },
+      ],
+    },
+    {
+      id: 22, nombre: 'Set Básico', precio: 22, categoria: 'Sets', icono: '👕',
+      imagen: 'assets/images/set-basico-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/set-basico-negro.jpeg' },
+        { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/set-basico-blanco.jpeg' },
+        { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/set-basico-morado.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/set-basico-azul.jpeg' },
+        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/set-basico-rosado.jpeg' },
+      ],
+    },
+    {
+      id: 23, nombre: 'Vestido Deportivo', precio: 22, categoria: 'Vestidos', icono: '👗',
+      imagen: 'assets/images/vestido-deportivo-vino-1.jpeg',
+      colores: [
+        { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/vestido-deportivo-vino-1.jpeg' },
+      ],
+      imagenes: [
+        'assets/images/vestido-deportivo-vino-1.jpeg',
+        'assets/images/vestido-deportivo-2.jpeg',
+      ],
+    },
+    {
+      id: 24, nombre: 'Enterizo Gym', precio: 16, categoria: 'Enterizos', icono: '👗',
+      imagen: 'assets/images/enterizo-gym-rosado.jpeg',
+      colores: [
+        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/enterizo-gym-rosado.jpeg' },
       ],
     },
   ];

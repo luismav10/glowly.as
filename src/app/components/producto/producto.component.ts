@@ -21,9 +21,17 @@ export class ProductoComponent implements OnInit {
 
   mostrarColores = signal(false);
   colorSeleccionado = signal<ColorVariant>({ nombre: '', hex: '', imagen: '' });
+  imagenActual = signal(0);
+
+  tieneGaleria = false;
+  imagenesGaleria: string[] = [];
+
+  private touchStartX = 0;
 
   ngOnInit() {
     this.colorSeleccionado.set(this.product().colores[0]);
+    this.imagenesGaleria = this.product().imagenes ?? [];
+    this.tieneGaleria = this.imagenesGaleria.length > 0;
   }
 
   toggleColores() {
@@ -32,5 +40,30 @@ export class ProductoComponent implements OnInit {
 
   seleccionarColor(color: ColorVariant) {
     this.colorSeleccionado.set(color);
+  }
+
+  imagenParaMostrar(): string {
+    if (this.tieneGaleria) {
+      return this.imagenesGaleria[this.imagenActual()];
+    }
+    return this.colorSeleccionado().imagen;
+  }
+
+  irAImagen(index: number) {
+    this.imagenActual.set(index);
+  }
+
+  onTouchStart(e: TouchEvent) {
+    this.touchStartX = e.touches[0].clientX;
+  }
+
+  onTouchEnd(e: TouchEvent) {
+    const diff = this.touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) < 50) return;
+    if (diff > 0) {
+      this.imagenActual.update(i => (i + 1) % this.imagenesGaleria.length);
+    } else {
+      this.imagenActual.update(i => (i - 1 + this.imagenesGaleria.length) % this.imagenesGaleria.length);
+    }
   }
 }

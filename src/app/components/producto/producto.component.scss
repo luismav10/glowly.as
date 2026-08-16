@@ -27,8 +27,40 @@
       display: block;
     }
 
+    .imagen-galeria {
+      animation: fadeIn 0.3s ease;
+    }
+
     &:hover img {
       transform: scale(1.05);
+    }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 2;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: 0.2s;
+
+        &.activo {
+          background: #4a2c5e;
+          transform: scale(1.2);
+        }
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.85);
+        }
+      }
     }
 
     .color-badge {
@@ -151,5 +183,10 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 

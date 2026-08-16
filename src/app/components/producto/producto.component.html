@@ -1,10 +1,22 @@
 <div class="producto-card" [class.expandido]="mostrarColores()">
-  <div class="img-wrapper" (click)="toggleColores()">
-    <img [src]="colorSeleccionado().imagen" [alt]="product().nombre + ' ' + colorSeleccionado().nombre" />
-    <div class="color-badge">
-      <span class="color-dot" [style.background]="colorSeleccionado().hex"></span>
-      {{ colorSeleccionado().nombre }}
-    </div>
+  <div class="img-wrapper" (click)="toggleColores()"
+    (touchstart)="onTouchStart($event)"
+    (touchend)="onTouchEnd($event)"
+  >
+    @if (tieneGaleria) {
+      <img [src]="imagenParaMostrar()" [alt]="product().nombre" class="imagen-galeria" />
+      <div class="carousel-dots">
+        @for (img of imagenesGaleria; track img; let i = $index) {
+          <span class="dot" [class.activo]="imagenActual() === i" (click)="irAImagen(i); $event.stopPropagation()"></span>
+        }
+      </div>
+    } @else {
+      <img [src]="colorSeleccionado().imagen" [alt]="product().nombre + ' ' + colorSeleccionado().nombre" />
+      <div class="color-badge">
+        <span class="color-dot" [style.background]="colorSeleccionado().hex"></span>
+        {{ colorSeleccionado().nombre }}
+      </div>
+    }
   </div>
 
   <div class="info">
@@ -13,22 +25,24 @@
     <div class="precio">$ {{ product().precio | number:'1.2-2' }}</div>
   </div>
 
-  <div class="colores-panel" [@expandColores]="mostrarColores()" (click)="$event.stopPropagation()">
-    <p class="colores-titulo">Colores disponibles:</p>
-    <div class="colores-grid">
-      @for (color of product().colores; track color.nombre) {
-        <div
-          class="color-opcion"
-          [class.activo]="colorSeleccionado().nombre === color.nombre"
-          (click)="seleccionarColor(color)"
-        >
-          <img [src]="color.imagen" [alt]="color.nombre" />
-          <div class="color-label">
-            <span class="color-dot" [style.background]="color.hex"></span>
-            {{ color.nombre }}
+  @if (!tieneGaleria) {
+    <div class="colores-panel" [@expandColores]="mostrarColores()" (click)="$event.stopPropagation()">
+      <p class="colores-titulo">Colores disponibles:</p>
+      <div class="colores-grid">
+        @for (color of product().colores; track color.nombre) {
+          <div
+            class="color-opcion"
+            [class.activo]="colorSeleccionado().nombre === color.nombre"
+            (click)="seleccionarColor(color)"
+          >
+            <img [src]="color.imagen" [alt]="color.nombre" />
+            <div class="color-label">
+              <span class="color-dot" [style.background]="color.hex"></span>
+              {{ color.nombre }}
+            </div>
           </div>
-        </div>
-      }
+        }
+      </div>
     </div>
-  </div>
+  }
 </div>
