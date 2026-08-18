@@ -59,7 +59,7 @@ export class FacturaService {
     },
 
     {
-      id: 7, nombre: 'Pants Deportivos', precio: 16, categoria: 'Pants', icono: '🩱',
+      id: 7, nombre: 'Pants Deportivos', precio: 17, categoria: 'Pants', icono: '🩱',
       imagen: 'assets/images/leggins-negro.jpeg',
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-negro.jpeg' },
