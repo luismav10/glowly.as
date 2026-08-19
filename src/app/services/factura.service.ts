@@ -30,7 +30,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 3, nombre: 'Set Musera Sport', precio: 19, categoria: 'Sets', icono: '👕',
+      id: 3, nombre: 'Set Musera Sport', precio: 20, categoria: 'Sets', icono: '👕',
       imagen: 'assets/images/set-musera-sport-negro.jpeg',
       colores: [
         { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/set-musera-sport-negro.jpeg' },
@@ -98,7 +98,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 9, nombre: 'Set Musera Sport', precio: 19, categoria: 'Sets', icono: '👕',
+      id: 9, nombre: 'Set Musera Sport', precio: 20, categoria: 'Sets', icono: '👕',
       imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg',
       colores: [
         { nombre: 'Amarillo', hex: '#f7f44b', imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg' },
