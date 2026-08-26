@@ -76,13 +76,7 @@ export class FacturaService {
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/short-sencillo-marron.jpeg' },
       ],
     },
-    {
-      id: 10, nombre: 'Short Corte V', precio: 8, categoria: 'Shorts', icono: '🩳',
-      imagen: 'assets/images/short-corte-v-gris.jpeg',
-      colores: [
-        { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/short-corte-v-gris.jpeg' },
-      ],
-    },
+
     {
       id: 5, nombre: 'Short Premium', precio: 11, categoria: 'Shorts', icono: '🩳',
       imagen: 'assets/images/short-premium-azul.jpeg',
@@ -181,14 +175,7 @@ export class FacturaService {
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/medias-basicas.jpeg' },
       ],
     },
-    {
-      id: 21, nombre: 'Vestido Deportivo', precio: 15, categoria: 'Vestidos', icono: '👗',
-      imagen: 'assets/images/vestido-deportivo-negro.jpeg',
-      colores: [
-        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/vestido-deportivo-negro.jpeg' },
-        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/vestido-deportivo-azul.jpeg' },
-      ],
-    },
+
     {
       id: 22, nombre: 'Set Básico', precio: 22, categoria: 'Sets', icono: '👕',
       imagen: 'assets/images/set-basico-negro.jpeg',
@@ -200,6 +187,7 @@ export class FacturaService {
         { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/set-basico-rosado.jpeg' },
       ],
     },
+
     {
       id: 23, nombre: 'Vestido Deportivo', precio: 18, categoria: 'Vestidos', icono: '👗',
       imagen: 'assets/images/vestido-deportivo-vino-1.jpeg',
@@ -216,6 +204,8 @@ export class FacturaService {
       imagen: 'assets/images/enterizo-gym-rosado.jpeg',
       colores: [
         { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/enterizo-gym-rosado.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/enterizo-gym-azul.jpg' },
+        { nombre: 'Verde', hex: '#2e7d32', imagen: 'assets/images/enterizo-gym-verde.jpg' },
       ],
     },
   ];
