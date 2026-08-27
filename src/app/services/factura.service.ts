@@ -208,6 +208,16 @@ export class FacturaService {
         { nombre: 'Verde', hex: '#2e7d32', imagen: 'assets/images/enterizo-gym-verde.jpg' },
       ],
     },
+    {
+      id: 25, nombre: 'Leggins Premium', precio: 18, categoria: 'Leggins', icono: '🩱',
+      imagen: 'assets/images/leggins-premium-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-premium-negro.jpeg' },
+        { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/leggins-premium-gris.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/leggins-premium-marron.jpeg' },
+        { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/leggins-premium-vino.jpeg' },
+      ],
+    },
   ];
 
   private carritoSubject = new BehaviorSubject<CartItem[]>([]);
