@@ -37,6 +37,8 @@ export class FacturaService {
         { nombre: 'Amarillo', hex: '#ffee54', imagen: 'assets/images/set-musera-sport-crema.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/set-musera-sport-negr.jpeg' },
         { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/set-musera-sport-rosado.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/set-musera-sport-marron.jpeg' },
+        { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/set-musera-sport-morado.jpeg' },
       ],
     },
     {
@@ -46,6 +48,9 @@ export class FacturaService {
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/top-simple-blanco.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-simple-negro.jpeg' },
         { nombre: 'Rojo', hex: '#bd1111', imagen: 'assets/images/top-simple-rojo.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/top-simple-azul.jpeg' },
+        { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/top-simple-morado.jpeg' },
+        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/top-simple-rosado.jpeg' },
       ],
     },
     {
@@ -216,6 +221,32 @@ export class FacturaService {
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/leggins-premium-gris.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/leggins-premium-marron.jpeg' },
         { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/leggins-premium-vino.jpeg' },
+      ],
+    },
+    {
+      id: 26, nombre: 'Chaqueta Deportiva Manga Larga', precio: 14, categoria: 'Chaquetas', icono: '🧥',
+      imagen: 'assets/images/chaqueta-deportiva-larga-negra.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/chaqueta-deportiva-larga-negra.jpeg' },
+        { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/chaqueta-deportiva-larga-gris.jpeg' },
+        { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/chaqueta-deportiva-larga-blanca.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/chaqueta-deportiva-larga-deportiva-marron.jpeg' },
+        { nombre: 'Rosada', hex: '#f48fb1', imagen: 'assets/images/chaqueta-deportiva-larga-rosada.jpeg' },
+      ],
+    },
+    {
+      id: 27, nombre: 'Chaqueta Deportiva Manga Corta', precio: 10, categoria: 'Chaquetas', icono: '🧥',
+      imagen: 'assets/images/buzo-deportivo-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/buzo-deportivo-negro.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/buzo-deportivo-marron.jpeg' },
+      ],
+    },
+    {
+      id: 28, nombre: 'Leggins Musera Sport', precio: 16, categoria: 'Leggins', icono: '🩱',
+      imagen: 'assets/images/leggins-musera-sport-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-musera-sport-negro.jpeg' },
       ],
     },
   ];
