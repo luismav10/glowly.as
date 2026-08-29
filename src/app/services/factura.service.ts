@@ -167,13 +167,6 @@ export class FacturaService {
       ],
     },
     {
-      id: 19, nombre: 'Set Morado', precio: 19, categoria: 'Sets', icono: '👕',
-      imagen: 'assets/images/enterizo-morado.jpeg',
-      colores: [
-        { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/enterizo-morado.jpeg' },
-      ],
-    },
-    {
       id: 20, nombre: 'Medias Básicas', precio: 1.5, categoria: 'Medias', icono: '🧦',
       imagen: 'assets/images/medias-basicas.jpeg',
       colores: [
