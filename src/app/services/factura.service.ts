@@ -242,6 +242,14 @@ export class FacturaService {
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-musera-sport-negro.jpeg' },
       ],
     },
+    {
+      id: 29, nombre: 'Enterizo Premium', precio: 19, categoria: 'Enterizos', icono: '👗',
+      imagen: 'assets/images/enterizo-premium-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-premium-negro.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/enterizo-premium-marron.jpeg' },
+      ],
+    },
   ];
 
   private carritoSubject = new BehaviorSubject<CartItem[]>([]);
