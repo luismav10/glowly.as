@@ -189,9 +189,8 @@ export class FacturaService {
     },
     {
       id: 24, nombre: 'Enterizo Gym', precio: 16, categoria: 'Enterizos', icono: '👗',
-      imagen: 'assets/images/enterizo-gym-rosado.jpeg',
+      imagen: 'assets/images/enterizo-gym-azul.jpg',
       colores: [
-        { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/enterizo-gym-rosado.jpeg' },
         { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/enterizo-gym-azul.jpg' },
         { nombre: 'Verde', hex: '#2e7d32', imagen: 'assets/images/enterizo-gym-verde.jpg' },
       ],
@@ -217,14 +216,6 @@ export class FacturaService {
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/chaqueta-deportiva-larga-blanca.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/chaqueta-deportiva-larga-deportiva-marron.jpeg' },
         { nombre: 'Rosada', hex: '#f48fb1', imagen: 'assets/images/chaqueta-deportiva-larga-rosada.jpeg' },
-      ],
-    },
-    {
-      id: 27, nombre: 'Chaqueta Deportiva Manga Corta', precio: 10, categoria: 'Chaquetas', icono: '🧥',
-      imagen: 'assets/images/buzo-deportivo-negro.jpeg',
-      colores: [
-        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/buzo-deportivo-negro.jpeg' },
-        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/buzo-deportivo-marron.jpeg' },
       ],
     },
     {
