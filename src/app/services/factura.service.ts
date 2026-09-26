@@ -58,8 +58,6 @@ export class FacturaService {
       imagen: 'assets/images/top-animal-print-gris.jpeg',
       colores: [
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/top-animal-print-gris.jpeg' },
-        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/top-animal-print-marron.jpeg' },
-        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/top-animal-print-negro.jpeg' },
       ],
     },
 
@@ -94,13 +92,6 @@ export class FacturaService {
         { nombre: 'Negro', hex: '#000000', imagen: 'assets/images/short-premium-negro.jpeg' },
         { nombre: 'Morado', hex: '#7b1fa2', imagen: 'assets/images/short-premiun-morado.jpeg' },
         { nombre: 'Rojo', hex: '#d32f2f', imagen: 'assets/images/short-premiun-rojo.jpeg' },
-      ],
-    },
-    {
-      id: 9, nombre: 'Set Musera Sport', precio: 20, categoria: 'Sets', icono: '👕',
-      imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg',
-      colores: [
-        { nombre: 'Amarillo', hex: '#f7f44b', imagen: 'assets/images/set-musera-sport-p-amarillo.jpeg' },
       ],
     },
     {
@@ -139,7 +130,7 @@ export class FacturaService {
       colores: [
         { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/short-running-blanco.jpeg' },
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/short-running-negro.jpeg' },
-        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/short-running-azul.jpeg' },
+        { nombre: 'Celeste', hex: '#87ceeb', imagen: 'assets/images/short-running-celeste.jpeg' },
         { nombre: 'Rosado', hex: '#f48fb1', imagen: 'assets/images/short-running-rosado.jpeg' },
       ],
     },
@@ -149,6 +140,7 @@ export class FacturaService {
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-basico.jpeg' },
         { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/enterizo-basico-azul.jpeg' },
+        { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/enterizo-basico-vino.jpeg' },
       ],
     },
     {
@@ -187,14 +179,12 @@ export class FacturaService {
     },
 
     {
-      id: 23, nombre: 'Vestido Deportivo', precio: 18, categoria: 'Vestidos', icono: '👗',
-      imagen: 'assets/images/vestido-deportivo-vino-1.jpeg',
+      id: 32, nombre: 'Vestido Deportivo', precio: 16, categoria: 'Vestidos', icono: '👗',
+      imagen: 'assets/images/vestido-deportivo-vino.jpeg',
       colores: [
-        { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/vestido-deportivo-vino-1.jpeg' },
-      ],
-      imagenes: [
-        'assets/images/vestido-deportivo-vino-1.jpeg',
-        'assets/images/vestido-deportivo-2.jpeg',
+        { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/vestido-deportivo-vino.jpeg' },
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/vestido-deportivo-negro.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/vestido-deportivo-azul.jpeg' },
       ],
     },
     {
@@ -213,7 +203,9 @@ export class FacturaService {
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-premium-negro.jpeg' },
         { nombre: 'Gris', hex: '#9e9e9e', imagen: 'assets/images/leggins-premium-gris.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/leggins-premium-marron.jpeg' },
-        { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/leggins-premium-vino.jpeg' },
+        { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/leggins-premium-vinotinto.jpeg' },
+        { nombre: 'Azul', hex: '#0a3055', imagen: 'assets/images/leggins-premium-azul.jpeg' },
+        { nombre: 'Rojo', hex: '#bd1111', imagen: 'assets/images/leggins-premium-rojo.jpeg' },
       ],
     },
     {
@@ -248,6 +240,45 @@ export class FacturaService {
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-premium-negro.jpeg' },
         { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/enterizo-premium-marron.jpeg' },
+      ],
+    },
+    {
+      id: 30, nombre: 'Manga Larga Tipo Compresión', precio: 14, categoria: 'Franelas de Compresión', icono: '🧥',
+      imagen: 'assets/images/manga-larga-tipo-comprension-blanca.jpeg',
+      colores: [
+        { nombre: 'Blanca', hex: '#f5f5f5', imagen: 'assets/images/manga-larga-tipo-comprension-blanca.jpeg' },
+        { nombre: 'Gris Oscuro', hex: '#616161', imagen: 'assets/images/manga-larga-tipo-comprension-gris-oscuro.jpeg' },
+        { nombre: 'Marrón', hex: '#6d4c41', imagen: 'assets/images/manga-larga-tipo-compresion-marron.jpeg' },
+      ],
+    },
+    {
+      id: 31, nombre: 'Leggins Fitness', precio: 12, categoria: 'Leggins', icono: '🩱',
+      imagen: 'assets/images/leggins-fitness-negro.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/leggins-fitness-negro.jpeg' },
+        { nombre: 'Vinotinto', hex: '#880e4f', imagen: 'assets/images/leggins-fitness-vinotinto.jpeg' },
+      ],
+    },
+    {
+      id: 33, nombre: 'Top Deportivo', precio: 12, categoria: 'Tops', icono: '👚',
+      imagen: 'assets/images/top-deportivo-blanco.jpeg',
+      colores: [
+        { nombre: 'Blanco', hex: '#f5f5f5', imagen: 'assets/images/top-deportivo-blanco.jpeg' },
+        { nombre: 'Azul Oscuro', hex: '#1b2f40', imagen: 'assets/images/top-deportivo-azul-oscuro.jpeg' },
+      ],
+    },
+    {
+      id: 34, nombre: 'Leggins Premium Bota Campana', precio: 22, categoria: 'Leggins', icono: '🩱',
+      imagen: 'assets/images/leggins-premiun-bota-campana-azul.jpeg',
+      colores: [
+        { nombre: 'Azul Oscuro', hex: '#27314d', imagen: 'assets/images/leggins-premiun-bota-campana-azul.jpeg' },
+      ],
+    },
+    {
+      id: 35, nombre: 'Set Musera Sport Corto', precio: 20, categoria: 'Sets', icono: '👕',
+      imagen: 'assets/images/set-musera-sport-negro-corto.jpeg',
+      colores: [
+        { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/set-musera-sport-negro-corto.jpeg' },
       ],
     },
   ];
