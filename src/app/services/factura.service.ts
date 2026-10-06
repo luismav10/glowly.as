@@ -226,7 +226,7 @@ export class FacturaService {
       ],
     },
     {
-      id: 29, nombre: 'Enterizo Premium', precio: 19, categoria: 'Enterizos', icono: '👗',
+      id: 29, nombre: 'Enterizo', precio: 19, categoria: 'Enterizos', icono: '👗',
       imagen: 'assets/images/enterizo-premium-negro.jpeg',
       colores: [
         { nombre: 'Negro', hex: '#333333', imagen: 'assets/images/enterizo-premium-negro.jpeg' },
