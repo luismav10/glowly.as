@@ -179,7 +179,7 @@ export class FacturaService {
     },
 
     {
-      id: 32, nombre: 'Vestido Deportivo', precio: 16, categoria: 'Vestidos', icono: '👗',
+      id: 32, nombre: 'Vestido Deportivo', precio: 20, categoria: 'Vestidos', icono: '👗',
       imagen: 'assets/images/vestido-deportivo-vino.jpeg',
       colores: [
         { nombre: 'Vino', hex: '#880e4f', imagen: 'assets/images/vestido-deportivo-vino.jpeg' },
